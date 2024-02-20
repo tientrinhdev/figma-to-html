@@ -1,25 +1,22 @@
-*{
-    box-sizing: border-box;
+body{
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
 }
 
 html{
     font-size: 62.5%;
 }
 
-/* Khôi phục lại cỡ chữ mặc định */
-body{
-    font-size: 1.6rem;
-    font-family: "Poppins", sans-serif;
-}
-
-/* Common */
+/* =============== Common ================= */
 a{
     text-decoration: none;
 }
 
 .main-content{
     width: 1170px;
+    /* Xử lý co giãn */
     max-width: calc(100% - 48px);
+    /* Căn giữa trang */
     margin-left: auto;
     margin-right: auto;
 }
@@ -33,12 +30,12 @@ a{
     text-align: center;
     font-size: 1.6rem;
     font-weight: 600;
-    border-radius: 999px;
-    background: #171100;
+    border-radius: 24.5px;
+    background-color: #171100;
 }
-/* ======================= header ======================== */
+/* =================== Header ================== */
 .header{
-    background: #fffcf4;
+    background-color: #fffcf4;
 }
 
 .header.fixed{
@@ -62,10 +59,10 @@ a{
 .nav a{
     position: relative;
     color: #5f5b53;
+    text-align: center;
     font-size: 1.6rem;
     padding: 8px 21px;
 }
-
 .nav li.active a,
 .nav a:hover{
     color: #171100;
@@ -73,20 +70,18 @@ a{
 }
 
 .nav li.active a::after{
-    position: absolute;
-    left: 21px;
     display: block;
     content: "";
     width: 12px;
     height: 2px;
     border-radius: 1px;
-    background: #171110;
-}
-
-.header .btn-sign-up{
-    min-width: 144px;
+    background-color: #171100;
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
 }
 
 .header .action{
-    padding-left: 49px;
+    min-width: 144px;
+    margin-left: 49px;
 }
